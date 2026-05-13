@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Sunscape | Sikkim Travel Stories</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog-shared.css">
+  <link rel="icon" type="image/png" href="images/favicon-new.webp">
+</head>
+
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+
+    <a href="index.html" class="nav-logo">
+      <img src="../images/3a7cc0a6-620b-4053-964d-6ebb9c44f120-removebg-preview.webp" alt="">
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../destinations.html">Destinations</a>
+      <a href="../package.html">Tours</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+
+    <a href="../contact.html" class="btn btn-primary btn-sm nav-book">Book Now</a>
+
+    <button class="hamburger" onclick="toggleNav()">
+      <span class="material-symbols-outlined" id="menuIcon">menu</span>
+    </button>
+
+  </div>
+</nav>
+
+<div class="nav-drawer" id="navDrawer">
+  <a href="../index.html">Home</a>
+  <a href="../destinations.html">Destinations</a>
+  <a href="../package.html">Tours</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+
+  <a href="../contact.html" class="btn btn-primary">
+    Book Now
+  </a>
+</div>
+
+<div class="blog-listing-hero">
+  <span class="eyebrow">Travel Stories</span>
+
+  <h1>Sikkim</h1>
+
+  <p>
+    Explore snow-covered mountains, peaceful monasteries,
+    alpine lakes and the untouched beauty of Northeast India.
+  </p>
+</div>
+
+<button class="back-btn" onclick="history.back()">
+  <span class="material-symbols-outlined">arrow_back</span>
+  All Stories
+</button>
+
+<span class="state-blog-title">4 Stories from Sikkim</span>
+
+<div class="blog-cards-grid">
+
+  <!-- GANGTOK -->
+
+  <a class="blog-card-item" href="gangtok.html">
+
+    <div class="card-img">
+      <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=80" alt="Gangtok"/>
+    </div>
+
+    <div class="card-body">
+
+      <span class="eyebrow">Gangtok</span>
+
+      <h3>Gangtok: The Heart of Sikkim</h3>
+
+      <p>
+        Discover MG Marg, Buddhist monasteries, mountain cafés
+        and breathtaking Himalayan views across the city.
+      </p>
+
+      <div class="card-footer">
+        <span>6 min read</span>
+
+        <span class="read-link">
+          Read
+          <span class="material-symbols-outlined" style="font-size:.9rem;">
+            arrow_forward
+          </span>
+        </span>
+      </div>
+
+    </div>
+  </a>
+
+  <!-- TSOMGO LAKE -->
+
+  <a class="blog-card-item" href="tsomgo-lake.html">
+
+    <div class="card-img">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&auto=format&fit=crop&q=80" alt="Tsomgo Lake"/>
+    </div>
+
+    <div class="card-body">
+
+      <span class="eyebrow">Tsomgo Lake</span>
+
+      <h3>Tsomgo Lake: Frozen Himalayan Beauty</h3>
+
+      <p>
+        Visit the stunning glacial lake surrounded by snow-covered
+        peaks and scenic mountain roads near Gangtok.
+      </p>
+
+      <div class="card-footer">
+        <span>5 min read</span>
+
+        <span class="read-link">
+          Read
+          <span class="material-symbols-outlined" style="font-size:.9rem;">
+            arrow_forward
+          </span>
+        </span>
+      </div>
+
+    </div>
+  </a>
+
+  <!-- LACHUNG -->
+
+  <a class="blog-card-item" href="lachung.html">
+
+    <div class="card-img">
+      <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=600&auto=format&fit=crop&q=80" alt="Lachung"/>
+    </div>
+
+    <div class="card-body">
+
+      <span class="eyebrow">Lachung</span>
+
+      <h3>Lachung & Yumthang Valley</h3>
+
+      <p>
+        Experience flower valleys, waterfalls, rivers and some
+        of the most scenic Himalayan landscapes in Sikkim.
+      </p>
+
+      <div class="card-footer">
+        <span>5 min read</span>
+
+        <span class="read-link">
+          Read
+          <span class="material-symbols-outlined" style="font-size:.9rem;">
+            arrow_forward
+          </span>
+        </span>
+      </div>
+
+    </div>
+  </a>
+
+  <!-- NATHULA PASS -->
+
+  <a class="blog-card-item" href="nathula-pass.html">
+
+    <div class="card-img">
+      <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&auto=format&fit=crop&q=80" alt="Nathula Pass"/>
+    </div>
+
+    <div class="card-body">
+
+      <span class="eyebrow">Nathula Pass</span>
+
+      <h3>Nathula Pass: Gateway to Tibet</h3>
+
+      <p>
+        Travel through dramatic mountain roads leading to the
+        historic Indo-China border at high altitude.
+      </p>
+
+      <div class="card-footer">
+        <span>4 min read</span>
+
+        <span class="read-link">
+          Read
+          <span class="material-symbols-outlined" style="font-size:.9rem;">
+            arrow_forward
+          </span>
+        </span>
+      </div>
+
+    </div>
+  </a>
+
+</div>
+
+<a class="wa-float"
+   href="https://wa.me/919999999999?text=Hi!"
+   target="_blank"
+   rel="noopener">
+
+  <svg viewBox="0 0 32 32" fill="currentColor">
+    <path d="M16 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.364.634 4.673 1.838 6.698L2.667 29.333l6.823-1.789A13.267 13.267 0 0 0 16 29.333C23.364 29.333 29.333 23.364 29.333 16S23.364 2.667 16 2.667Zm0 24.266a11.003 11.003 0 0 1-5.607-1.534l-.402-.238-4.05 1.062 1.08-3.944-.263-.41A10.983 10.983 0 0 1 5 16C5 9.935 9.935 5 16 5s11 4.935 11 11-4.935 11-11 11Zm6-8.222c-.33-.165-1.95-.962-2.253-1.072-.302-.11-.522-.165-.742.165-.22.33-.85 1.072-1.043 1.293-.192.22-.385.247-.715.083-.33-.165-1.393-.513-2.653-1.638-.98-.875-1.641-1.956-1.834-2.286-.192-.33-.02-.508.145-.672.149-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.413-.027-.578-.083-.165-.742-1.788-1.017-2.448-.267-.644-.54-.556-.742-.566-.192-.009-.413-.011-.633-.011-.22 0-.578.082-.88.412s-1.155 1.128-1.155 2.75 1.183 3.19 1.348 3.41c.165.22 2.328 3.556 5.642 4.987.789.34 1.405.543 1.885.695.792.252 1.513.216 2.083.131.635-.095 1.95-.797 2.226-1.567.275-.77.275-1.431.192-1.567-.082-.138-.302-.22-.633-.385Z"/>
+  </svg>
+
+</a>
+
+<script src="../main.js"></script>
+
+</body>
+</html>

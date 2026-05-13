@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Sunscape Tour and Travels | Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon-new.webp">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/3a7cc0a6-620b-4053-964d-6ebb9c44f120-removebg-preview.webp" alt=""></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="blog/index.html">Travel Guide</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn-primary btn-sm nav-book">Book Now</a>
+    <button class="hamburger" onclick="toggleNav()"><span class="material-symbols-outlined" id="menuIcon">menu</span></button>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <a href="index.html">Home</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="blog/index.html">Travel Guide</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary">Book Now</a>
+</div>
+
+<!-- CONTACT HERO -->
+<div class="contact-hero-wrap">
+  <div class="contact-hero-text">
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Let's Plan Your Journey.</h1>
+    <p>Tell us your dream destination, travel dates, and group size — our travel experts will craft the perfect itinerary for you within 24 hours.</p>
+    <div class="contact-guide-row">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80" alt="Guide 1"/>
+      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&auto=format&fit=crop&q=80" alt="Guide 2"/>
+      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&auto=format&fit=crop&q=80" alt="Guide 3"/>
+      <span>Talk to a travel expert today</span>
+    </div>
+  </div>
+  <div class="contact-hero-img">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&auto=format&fit=crop&q=80" alt="India Travel"/>
+  </div>
+</div>
+
+<!-- CONTACT GRID -->
+<section class="contact-grid-section">
+  <div class="contact-grid">
+
+    <!-- FORM -->
+    <div class="contact-form-wrap">
+      <h2>Send an Enquiry</h2>
+
+      <!-- 
+        HOW TO CONNECT FORM TO EMAIL (FREE):
+        Option A — Formspree (Recommended, easiest):
+          1. Go to https://formspree.io → Sign up free
+          2. Create a new form, get endpoint like: https://formspree.io/f/xyzabc12
+          3. Replace 'YOUR_FORMSPREE_ENDPOINT' in main.js with that URL
+        
+        Option B — Form submits to WhatsApp (works without any setup):
+          If Formspree not set up, form data automatically opens WhatsApp
+          with the enquiry details. Client receives it on WhatsApp.
+      -->
+
+      <form class="c-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+        <div class="c-row">
+          <div class="c-group">
+            <label>Full Name *</label>
+            <input type="text" name="name" placeholder="Your name" required/>
+          </div>
+          <div class="c-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" placeholder="+91 98765 43210" required/>
+          </div>
+        </div>
+        <div class="c-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="your@email.com"/>
+        </div>
+        <div class="c-group">
+          <label>Destination *</label>
+          <select name="destination" required>
+            <option value="">Select a destination</option>
+            <optgroup label="Himachal Pradesh">
+              <option>Shimla & Manali (5N/6D)</option>
+              <option>Shimla, Manali, Dharamshala & Dalhousie (8N/9D)</option>
+              <option>Manali Only</option>
+              <option>Dharamshala & McLeod Ganj</option>
+            </optgroup>
+            <optgroup label="Kerala">
+              <option>Kerala Complete (Kochi · Munnar · Thekkady · Alleppey · Kovalam)</option>
+              <option>Kerala Beach & Backwaters</option>
+            </optgroup>
+            <optgroup label="Rajasthan">
+              <option>Royal Rajasthan Circuit (Jaipur · Jodhpur · Jaisalmer · Udaipur)</option>
+              <option>Jaipur, Jodhpur & Udaipur</option>
+            </optgroup>
+            <optgroup label="Sikkim">
+              <option>Sikkim & Darjeeling (Gangtok · Lachen · Lachung)</option>
+              <option>Darjeeling Tea Trail</option>
+            </optgroup>
+            <optgroup label="Goa">
+              <option>Goa Beach Holiday (North & South Goa · Dudhsagar)</option>
+              <option>Goa Luxury Retreat</option>
+            </optgroup>
+            <option value="custom">Custom Itinerary</option>
+          </select>
+        </div>
+        <div class="c-row">
+          <div class="c-group">
+            <label>Travel Date</label>
+            <input type="date" name="travel_date"/>
+          </div>
+          <div class="c-group">
+            <label>Number of Travellers</label>
+            <input type="number" name="travellers" min="1" max="50" placeholder="e.g. 2"/>
+          </div>
+        </div>
+        <div class="c-group">
+          <label>Pickup Point</label>
+          <select name="pickup">
+            <option value="">Select pickup city</option>
+            <optgroup label="Himachal Routes">
+              <option>Delhi (Airport / Railway Station / Bus Stand)</option>
+              <option>Chandigarh</option>
+              <option>Amritsar</option>
+            </optgroup>
+            <optgroup label="Kerala Routes">
+              <option>Kochi (Airport / Railway Station)</option>
+              <option>Trivandrum (Airport / Railway Station)</option>
+            </optgroup>
+            <optgroup label="Rajasthan Routes">
+              <option>Delhi</option>
+              <option>Jaipur</option>
+            </optgroup>
+            <optgroup label="Sikkim / Darjeeling">
+              <option>Gangtok</option>
+              <option>Darjeeling / NJP Station</option>
+            </optgroup>
+            <optgroup label="Goa">
+              <option>Goa Airport</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="c-group">
+          <label>Message / Special Requirements</label>
+          <textarea name="message" rows="4" placeholder="Any special requests, preferred hotels, dietary needs, or questions…"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          Send Enquiry — We'll Respond in 24 hrs
+        </button>
+      </form>
+
+      <!-- SUCCESS STATE -->
+      <div class="form-success" id="formSuccess">
+        <span class="material-symbols-outlined">check_circle</span>
+        <h3>Enquiry Sent!</h3>
+        <p>Our travel experts will reach out within 24 hours. For a faster response, WhatsApp us directly using the button on this page.</p>
+      </div>
+    </div>
+
+    <!-- SIDEBAR INFO -->
+    <div class="contact-side">
+
+      <!-- WHATSAPP CARD -->
+      <div class="c-card">
+        <span class="material-symbols-outlined c-card-icon">chat</span>
+        <h3>WhatsApp Us Directly</h3>
+        <p>For instant responses, chat with our travel experts on WhatsApp. We're available 9 AM – 9 PM daily.</p>
+        <!-- CHANGE: Replace 919999999999 with client's actual WhatsApp number -->
+        <a class="btn-wa" href="https://wa.me/919999999999?text=Hi!%20I%20want%20to%20enquire%20about%20a%20tour%20package." target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" fill="currentColor" width="18" height="18"><path d="M16 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.364.634 4.673 1.838 6.698L2.667 29.333l6.823-1.789A13.267 13.267 0 0 0 16 29.333C23.364 29.333 29.333 23.364 29.333 16S23.364 2.667 16 2.667Zm0 24.266a11.003 11.003 0 0 1-5.607-1.534l-.402-.238-4.05 1.062 1.08-3.944-.263-.41A10.983 10.983 0 0 1 5 16C5 9.935 9.935 5 16 5s11 4.935 11 11-4.935 11-11 11Zm6-8.222c-.33-.165-1.95-.962-2.253-1.072-.302-.11-.522-.165-.742.165-.22.33-.85 1.072-1.043 1.293-.192.22-.385.247-.715.083-.33-.165-1.393-.513-2.653-1.638-.98-.875-1.641-1.956-1.834-2.286-.192-.33-.02-.508.145-.672.149-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.413-.027-.578-.083-.165-.742-1.788-1.017-2.448-.267-.644-.54-.556-.742-.566-.192-.009-.413-.011-.633-.011-.22 0-.578.082-.88.412s-1.155 1.128-1.155 2.75 1.183 3.19 1.348 3.41c.165.22 2.328 3.556 5.642 4.987.789.34 1.405.543 1.885.695.792.252 1.513.216 2.083.131.635-.095 1.95-.797 2.226-1.567.275-.77.275-1.431.192-1.567-.082-.138-.302-.22-.633-.385Z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- DIRECT CONTACT -->
+      <div class="c-card">
+        <span class="material-symbols-outlined c-card-icon">contact_phone</span>
+        <h3>Direct Contact</h3>
+        <div class="direct-links">
+          <!-- CHANGE: Replace with client's actual phone and email -->
+          <a href="tel:+919999999999" class="d-link">
+            <span class="material-symbols-outlined">call</span> +91 99999 99999
+          </a>
+          <a href="mailto:info@Sunscape Tour and Travelstravels.in" class="d-link">
+            <span class="material-symbols-outlined">mail</span> info@Sunscape Tour and Travelstravels.in
+          </a>
+          <div class="d-link" style="cursor:default;">
+            <span class="material-symbols-outlined">schedule</span> Mon–Sat, 9 AM – 9 PM IST
+          </div>
+        </div>
+      </div>
+
+      <!-- PAYMENT INFO -->
+      <div class="c-card" style="background:var(--bg3);">
+        <span class="material-symbols-outlined c-card-icon">currency_rupee</span>
+        <h3>How Payment Works</h3>
+        <p style="font-size:.84rem;color:var(--muted);">We do <strong>not</strong> accept online payments through this website. After confirming your booking via WhatsApp or this form:</p>
+        <ul style="margin-top:10px;display:flex;flex-direction:column;gap:6px;">
+          <li style="font-size:.83rem;color:var(--muted);display:flex;gap:6px;align-items:flex-start;">
+            <span class="material-symbols-outlined" style="font-size:.9rem;color:var(--gold);flex-shrink:0;margin-top:2px;">check</span>
+            Bank Transfer (NEFT / RTGS)
+          </li>
+          <li style="font-size:.83rem;color:var(--muted);display:flex;gap:6px;align-items:flex-start;">
+            <span class="material-symbols-outlined" style="font-size:.9rem;color:var(--gold);flex-shrink:0;margin-top:2px;">check</span>
+            UPI Payment
+          </li>
+          <li style="font-size:.83rem;color:var(--muted);display:flex;gap:6px;align-items:flex-start;">
+            <span class="material-symbols-outlined" style="font-size:.9rem;color:var(--gold);flex-shrink:0;margin-top:2px;">check</span>
+            Cash at our office
+          </li>
+        </ul>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:10px;">Full booking details & written confirmation shared before any payment.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OFFICE / BASECAMP -->
+<section class="basecamp-section section">
+  <div class="container">
+    <div class="basecamp-grid">
+      <div class="basecamp-text">
+        <span class="eyebrow">Our Office</span>
+        <h2>Visit Our Basecamp</h2>
+        <p>We welcome walk-in visitors to discuss your travel plans in person. Come meet our team and let's plan your dream journey over a cup of chai!</p>
+        <div class="address-row">
+          <span class="material-symbols-outlined">location_on</span>
+          <!-- CHANGE: Replace with client's actual office address -->
+          <div>
+            <strong>Sunscape Tour and Travels Travels Office</strong><br/>
+            <!-- Replace with client's address -->
+            123, Travel House, Main Market<br/>
+            City, State — 000000<br/>
+            India
+          </div>
+        </div>
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Open Today · 9 AM – 9 PM IST
+        </div>
+      </div>
+      <div class="basecamp-map">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=900&auto=format&fit=crop&q=80" alt="Office location"/>
+        <span class="map-pin material-symbols-outlined">location_on</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section section">
+  <div class="container">
+    <div class="faq-wrap">
+      <span class="eyebrow">Common Questions</span>
+      <h2 class="section-title" style="margin-bottom:28px;">Your Questions, Answered</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How early should I book? <span class="material-symbols-outlined">expand_more</span></button>
+          <div class="faq-a"><p>We recommend booking at least 2–4 weeks in advance, especially for peak season (May–June, December–January). For group bookings, 4–6 weeks advance is ideal to ensure the best hotels and vehicles.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you handle group bookings? <span class="material-symbols-outlined">expand_more</span></button>
+          <div class="faq-a"><p>Yes! We specialise in group travel — family trips, friend groups, corporate retreats, and honeymoon packages. Contact us with your group size and we'll create a customised package.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What if I want to customise the itinerary? <span class="material-symbols-outlined">expand_more</span></button>
+          <div class="faq-a"><p>Absolutely! All our packages can be customised — extend stays, add new destinations, change pickup points, or modify meals. Just mention your preferences in the enquiry form or WhatsApp us.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What is your cancellation policy? <span class="material-symbols-outlined">expand_more</span></button>
+          <div class="faq-a"><p>Cancellation terms are discussed at time of booking confirmation. Generally, cancellations 15+ days before travel receive a full refund minus processing fees. Cancellations within 7 days may attract partial charges. Full details are shared in the written booking confirmation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Is there any hidden charge? <span class="material-symbols-outlined">expand_more</span></button>
+          <div class="faq-a"><p>No hidden charges — ever. Our quotes include accommodation, meals as specified, vehicle, driver, tolls, and parking. The only extras are adventure activities (optional, own cost), personal shopping, and monument entry fees. Everything is listed clearly before you pay.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo">Sunscape Tour and Travels<span style="color:var(--gold-lt)">.</span></span>
+      <p class="footer-about">Curating unforgettable journeys across India's most beautiful destinations.</p>
+      <div class="footer-social">
+        <a href="#"><span class="material-symbols-outlined">public</span></a>
+        <a href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+        <a href="mailto:info@Sunscape Tour and Travelstravels.in"><span class="material-symbols-outlined">mail</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Destinations</h4>
+      <ul>
+        <li><a href="destinations.html?state=himachal">Himachal Pradesh</a></li>
+        <li><a href="destinations.html?state=kerala">Kerala</a></li>
+        <li><a href="destinations.html?state=rajasthan">Rajasthan</a></li>
+        <li><a href="destinations.html?state=sikkim">Sikkim & Darjeeling</a></li>
+        <li><a href="destinations.html?state=goa">Goa</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="destinations.html">All Tours</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Sunscape Tour and Travels Travels. All rights reserved.</p>
+    <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/919999999999?text=Hi!%20I%20want%20to%20enquire%20about%20a%20tour%20package." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.364.634 4.673 1.838 6.698L2.667 29.333l6.823-1.789A13.267 13.267 0 0 0 16 29.333C23.364 29.333 29.333 23.364 29.333 16S23.364 2.667 16 2.667Zm0 24.266a11.003 11.003 0 0 1-5.607-1.534l-.402-.238-4.05 1.062 1.08-3.944-.263-.41A10.983 10.983 0 0 1 5 16C5 9.935 9.935 5 16 5s11 4.935 11 11-4.935 11-11 11Zm6-8.222c-.33-.165-1.95-.962-2.253-1.072-.302-.11-.522-.165-.742.165-.22.33-.85 1.072-1.043 1.293-.192.22-.385.247-.715.083-.33-.165-1.393-.513-2.653-1.638-.98-.875-1.641-1.956-1.834-2.286-.192-.33-.02-.508.145-.672.149-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.413-.027-.578-.083-.165-.742-1.788-1.017-2.448-.267-.644-.54-.556-.742-.566-.192-.009-.413-.011-.633-.011-.22 0-.578.082-.88.412s-1.155 1.128-1.155 2.75 1.183 3.19 1.348 3.41c.165.22 2.328 3.556 5.642 4.987.789.34 1.405.543 1.885.695.792.252 1.513.216 2.083.131.635-.095 1.95-.797 2.226-1.567.275-.77.275-1.431.192-1.567-.082-.138-.302-.22-.633-.385Z"/></svg>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>

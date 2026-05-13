@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Sunscape Tour and Travels | Our Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon-new.webp">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/3a7cc0a6-620b-4053-964d-6ebb9c44f120-removebg-preview.webp" alt=""></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="blog/index.html">Travel Guide</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn-primary btn-sm nav-book">Book Now</a>
+    <button class="hamburger" onclick="toggleNav()"><span class="material-symbols-outlined" id="menuIcon">menu</span></button>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <a href="index.html">Home</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="blog/index.html">Travel Guide</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary">Book Now</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=1600&auto=format&fit=crop&q=80" alt="Our Story"/>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content container">
+    <span class="eyebrow">Our Story</span>
+    <h1>Crafting the Art of Travel.</h1>
+    <p class="sub">Born from a deep love for India's landscapes, Sunscape Tour and Travels curates journeys that go beyond sightseeing — we craft memories.</p>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy-section section">
+  <div class="container">
+    <div class="philosophy-wrap">
+      <div class="quote-block reveal">
+        <blockquote>"We believe that travel is not a change of scenery, but a change of perspective. True luxury is found in the seamless grace of a journey where every detail has been anticipated — from the moment of departure to the final return."</blockquote>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:48px;" class="about-grid">
+        <div class="reveal">
+          <span class="eyebrow">Who We Are</span>
+          <h2 class="section-title" style="margin-bottom:16px;">Your Trusted Travel Partners</h2>
+          <p style="color:var(--muted);line-height:1.8;margin-bottom:14px;">Sunscape Tour and Travels Travels is a boutique travel company specialising in handcrafted tour packages across India's most beautiful destinations — Himachal Pradesh, Kerala, Rajasthan, Sikkim, and Goa.</p>
+          <p style="color:var(--muted);line-height:1.8;margin-bottom:14px;">We handle everything — pickup and drop, hotel bookings, sightseeing, transfers, and 24/7 support — so you travel with complete peace of mind.</p>
+          <p style="color:var(--muted);line-height:1.8;">Our pricing is transparent, our vehicles are comfortable, and our team is always just a WhatsApp message away.</p>
+        </div>
+        <div class="reveal">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&auto=format&fit=crop&q=80" alt="Himalayan Journey" style="border-radius:var(--r);height:320px;width:100%;object-fit:cover;"/>
+        </div>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar reveal">
+          <span class="pillar-n">01.</span>
+          <h3>Personalised Curation</h3>
+          <p>No two trips are the same. Every itinerary is handcrafted around your dates, interests, and budget — with a local expert guiding every step.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar-n">02.</span>
+          <h3>Seamless Transfers</h3>
+          <p>Private exclusive vehicles from your airport, railway station, or bus stand — same driver, same car, entire journey. No shared cabs, no compromises.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar-n">03.</span>
+          <h3>Honest Pricing</h3>
+          <p>We quote everything upfront. No hidden charges, no surprise bills. Pay after confirmation — bank transfer, UPI, or cash. No online payment pressure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUSTAINABLE BANNER -->
+<div class="sustain-banner">
+  <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600&auto=format&fit=crop&q=80" alt="Responsible Travel"/>
+  <div class="overlay">
+    <div class="sustain-inner">
+      <span class="eyebrow" style="color:var(--gold-lt);">Our Commitment</span>
+      <h2>Responsible Travel, Always</h2>
+      <p>We support local economies, use responsible vendors, and ensure our tours leave a positive impact on every destination we visit.</p>
+      <a href="contact.html" class="btn btn-white">Start Your Journey</a>
+    </div>
+  </div>
+</div>
+
+<!-- DESTINATIONS WE COVER -->
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">Where We Operate</span>
+        <h2 class="section-title">Destinations We Cover</h2>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+
+      <div class="reveal" style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1585016495481-91613b7d9f5e?w=600&auto=format&fit=crop&q=80" alt="Himachal" style="height:160px;width:100%;object-fit:cover;"/>
+        <div style="padding:18px;">
+          <h3 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:6px;">Himachal Pradesh</h3>
+          <p style="font-size:.83rem;color:var(--muted);margin-bottom:10px;">Shimla · Manali · Dharamshala · Dalhousie · Khajjiar</p>
+          <p style="font-size:.78rem;color:var(--muted);"><strong>Pickup:</strong> Delhi · Chandigarh · Amritsar</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1590374504350-d5ebcb4cfd2e?w=600&auto=format&fit=crop&q=80" alt="Kerala" style="height:160px;width:100%;object-fit:cover;"/>
+        <div style="padding:18px;">
+          <h3 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:6px;">Kerala</h3>
+          <p style="font-size:.83rem;color:var(--muted);margin-bottom:10px;">Kochi · Munnar · Thekkady · Alleppey · Kovalam · Varkala · Trivandrum</p>
+          <p style="font-size:.78rem;color:var(--muted);"><strong>Pickup:</strong> Kochi · Trivandrum</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1578898395416-7da9e8c3e7fc?w=600&auto=format&fit=crop&q=80" alt="Rajasthan" style="height:160px;width:100%;object-fit:cover;"/>
+        <div style="padding:18px;">
+          <h3 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:6px;">Rajasthan</h3>
+          <p style="font-size:.83rem;color:var(--muted);margin-bottom:10px;">Jaipur · Ajmer · Jodhpur · Jaisalmer · Udaipur · Mount Abu</p>
+          <p style="font-size:.78rem;color:var(--muted);"><strong>Pickup:</strong> Delhi · Jaipur</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&fit=crop&q=80" alt="Sikkim" style="height:160px;width:100%;object-fit:cover;"/>
+        <div style="padding:18px;">
+          <h3 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:6px;">Sikkim & Darjeeling</h3>
+          <p style="font-size:.83rem;color:var(--muted);margin-bottom:10px;">Gangtok · Lachen · Lachung · Darjeeling</p>
+          <p style="font-size:.78rem;color:var(--muted);"><strong>Pickup:</strong> Gangtok · Darjeeling</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&auto=format&fit=crop&q=80" alt="Goa" style="height:160px;width:100%;object-fit:cover;"/>
+        <div style="padding:18px;">
+          <h3 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:6px;">Goa</h3>
+          <p style="font-size:.83rem;color:var(--muted);margin-bottom:10px;">North Goa · South Goa · Dudhsagar Falls</p>
+          <p style="font-size:.78rem;color:var(--muted);"><strong>Pickup:</strong> Goa Airport</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">The People Behind Sunscape Tour and Travels</span>
+        <h2 class="section-title">Our Team</h2>
+        <p class="section-sub">Passionate travellers and local experts who design every journey with care.</p>
+      </div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-av"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Aryan"/></div>
+        <h4>Aryan Sharma</h4>
+        <p>Founder & Lead Curator</p>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-av"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80" alt="Rohan"/></div>
+        <h4>Rohan Verma</h4>
+        <p>Himachal Specialist</p>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-av"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&auto=format&fit=crop&q=80" alt="Meera"/></div>
+        <h4>Meera Kashyap</h4>
+        <p>Kerala & South India Expert</p>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-av"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&auto=format&fit=crop&q=80" alt="Aisha"/></div>
+        <h4>Aisha Singh</h4>
+        <p>Rajasthan & Desert Routes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section" style="background:var(--dark2);color:#fff;padding:60px 0;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;" class="stats-grid">
+      <div class="reveal">
+        <div style="font-family:var(--font-serif);font-size:2.8rem;color:var(--gold-lt);font-weight:300;">500+</div>
+        <div style="font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:6px;">Happy Travellers</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:var(--font-serif);font-size:2.8rem;color:var(--gold-lt);font-weight:300;">5</div>
+        <div style="font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:6px;">States Covered</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:var(--font-serif);font-size:2.8rem;color:var(--gold-lt);font-weight:300;">20+</div>
+        <div style="font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:6px;">Tour Packages</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:var(--font-serif);font-size:2.8rem;color:var(--gold-lt);font-weight:300;">4.9★</div>
+        <div style="font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:6px;">Average Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo">Sunscape Tour and Travels<span style="color:var(--gold-lt)">.</span></span>
+      <p class="footer-about">Curating unforgettable journeys across India's most beautiful destinations.</p>
+      <div class="footer-social">
+        <a href="#"><span class="material-symbols-outlined">public</span></a>
+        <a href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+        <a href="mailto:info@Sunscape Tour and Travelstravels.in"><span class="material-symbols-outlined">mail</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Destinations</h4>
+      <ul>
+        <li><a href="destinations.html?state=himachal">Himachal Pradesh</a></li>
+        <li><a href="destinations.html?state=kerala">Kerala</a></li>
+        <li><a href="destinations.html?state=rajasthan">Rajasthan</a></li>
+        <li><a href="destinations.html?state=sikkim">Sikkim & Darjeeling</a></li>
+        <li><a href="destinations.html?state=goa">Goa</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="destinations.html">All Tours</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Sunscape Tour and Travels Travels. All rights reserved.</p>
+    <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919999999999?text=Hi!%20I%20want%20to%20know%20more%20about%20Sunscape Tour and Travels%20Travels." target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.364.634 4.673 1.838 6.698L2.667 29.333l6.823-1.789A13.267 13.267 0 0 0 16 29.333C23.364 29.333 29.333 23.364 29.333 16S23.364 2.667 16 2.667Zm0 24.266a11.003 11.003 0 0 1-5.607-1.534l-.402-.238-4.05 1.062 1.08-3.944-.263-.41A10.983 10.983 0 0 1 5 16C5 9.935 9.935 5 16 5s11 4.935 11 11-4.935 11-11 11Zm6-8.222c-.33-.165-1.95-.962-2.253-1.072-.302-.11-.522-.165-.742.165-.22.33-.85 1.072-1.043 1.293-.192.22-.385.247-.715.083-.33-.165-1.393-.513-2.653-1.638-.98-.875-1.641-1.956-1.834-2.286-.192-.33-.02-.508.145-.672.149-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.413-.027-.578-.083-.165-.742-1.788-1.017-2.448-.267-.644-.54-.556-.742-.566-.192-.009-.413-.011-.633-.011-.22 0-.578.082-.88.412s-1.155 1.128-1.155 2.75 1.183 3.19 1.348 3.41c.165.22 2.328 3.556 5.642 4.987.789.34 1.405.543 1.885.695.792.252 1.513.216 2.083.131.635-.095 1.95-.797 2.226-1.567.275-.77.275-1.431.192-1.567-.082-.138-.302-.22-.633-.385Z"/></svg>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>

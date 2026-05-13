@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Sunscape Tour and Travels | Best Tour Packages in India</title>
+
+<meta name="description" content="Explore affordable and luxury tour packages across Himachal, Goa, Kerala, Rajasthan, Sikkim and more with Sunscape Tour and Travels. Book your dream holiday today."/>
+
+<meta name="keywords" content="tour packages india, goa tour package, himachal package, kerala tour, shimla manali package, travel agency india, honeymoon packages"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon-new.webp">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/3a7cc0a6-620b-4053-964d-6ebb9c44f120-removebg-preview.webp" alt=""></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="blog/index.html">Travel Guide</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn-primary btn-sm nav-book">Book Now</a>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Menu">
+      <span class="material-symbols-outlined" id="menuIcon">menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="nav-drawer" id="navDrawer">
+  <a href="index.html">Home</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="blog/index.html">Travel Guide</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary">Book Now</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&auto=format&fit=crop&q=80" alt="India travel"/>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">India's Most Beautiful Journeys</p>
+    <h1 class="hero-title">Discover India,<br><em>Unfiltered.</em></h1>
+    <div class="search-wrap">
+      <div class="s-field">
+        <label>Destination</label>
+        <select id="heroDestination">
+          <option value="">Himachal, Kerala, Rajasthan…</option>
+          <option value="himachal">Himachal Pradesh</option>
+          <option value="kerala">Kerala</option>
+          <option value="rajasthan">Rajasthan</option>
+          <option value="sikkim">Sikkim</option>
+          <option value="goa">Goa</option>
+        </select>
+      </div>
+      <!-- <div class="s-div"></div>
+      <div class="s-field">
+        <label>Travel Date</label>
+        <input type="date"/>
+      </div> -->
+      <div class="s-div"></div>
+      <div class="s-field">
+        <label>Budget</label>
+        <select id="heroBudget">
+          <option value="">Any Budget</option>
+<option value="20000">Under ₹25k</option>
+<option value="30000">₹25k – ₹40k</option>
+<option value="50000">₹40k – ₹60k</option>
+<option value="99999">₹60k+</option>
+        </select>
+      </div>
+      <button class="btn btn-gold" onclick="heroSearch()">
+        <span class="material-symbols-outlined">travel_explore</span> Search
+      </a>
+    </div>
+  </div>
+  <!-- <div class="hero-scroll"><span class="material-symbols-outlined">keyboard_arrow_down</span></div> -->
+</section>
+
+<!-- ===== DESTINATIONS ===== -->
+<section class="dest-section section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">Explore India With Sunscape</span>
+        <h2 class="section-title">Top Travel Destinations in India</h2>
+        <p class="section-sub"> Discover the best holiday destinations in India with Sunscape Tour and Travels — from the snowy mountains of Himachal Pradesh and the peaceful backwaters of Kerala to the royal heritage of Rajasthan, the scenic valleys of Sikkim & Darjeeling, and the vibrant beaches of Goa. Explore handpicked tour packages designed for unforgettable family vacations, honeymoon trips, adventure tours, and luxury getaways across India.</p>
+      </div>
+      <a href="destinations.html" class="link-cta">View All <span class="material-symbols-outlined">arrow_forward</span></a>
+    </div>
+    <div class="dest-grid">
+      <a href="destinations.html?state=himachal" class="dest-card dest-card--lg reveal">
+        <img src="images/himachal 29348923.webp" alt="Himachal Pradesh"/>
+        <div class="dest-overlay">
+          <span class="tag">Shimla · Manali · Dharamshala</span>
+          <h3>Himachal Pradesh</h3>
+        </div>
+      </a>
+      <a href="destinations.html?state=kerala" class="dest-card reveal">
+        <img src="images/kerala 988942.webp" alt="Kerala"/>
+        <div class="dest-overlay">
+          <h3>Kerala</h3>
+        </div>
+      </a>
+      <a href="destinations.html?state=rajasthan" class="dest-card reveal">
+        <img src="images/Rajsthan 92889247.webp" alt="Rajasthan"/>
+        <div class="dest-overlay">
+          <h3>Rajasthan</h3>
+        </div>
+      </a>
+      <a href="destinations.html?state=sikkim" class="dest-card reveal" style="grid-column: span 2;">
+        <img src="images/Darjeling 3903892.webp" alt="Sikkim"/>
+        <div class="dest-overlay">
+          <h3>Sikkim & Darjeeling</h3>
+        </div>
+      </a>
+      <a href="destinations.html?state=goa" class="dest-card reveal" style="grid-column: span 2;">
+        <img src="images/Goa934u4238.webp" alt="Goa"/>
+        <div class="dest-overlay">
+          <h3>Goa</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURED PACKAGES ===== -->
+<section class="packages-section section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">Featured Packages</span>
+        <h2 class="section-title">Signature Experiences</h2>
+      </div>
+      <a href="package.html" class="link-cta">All Packages <span class="material-symbols-outlined">arrow_forward</span></a>
+    </div>
+    <div class="pkg-grid">
+      <!-- Himachal -->
+      <a href="shimla-manali-package.html" class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="images/shimla 1.webp" alt="Shimla Manali"/>
+          <span class="pkg-badge luxury">Luxury</span>
+          <span class="pkg-state">Himachal</span>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-meta">
+            <span><span class="material-symbols-outlined">schedule</span> 5N/6D</span>
+            <span><span class="material-symbols-outlined">person</span> 2 Persons</span>
+          </div>
+          <div class="star-row">★★★★★</div>
+          <h3>Shimla Manali Holiday Package</h3>
+          <p>Delhi pickup · Shimla sightseeing, Kufri, Manali, Solang Valley & Hadimba Temple.</p>
+          <div class="pkg-pickup"><span class="material-symbols-outlined">directions_car</span> Pickup: Delhi</div>
+          <div class="pkg-footer">
+            <div>
+              <div class="pkg-price">₹30,000 </div>
+              <div style="font-size:.72rem;color:#388e3c;">Off-season from ₹25,000</div>
+            </div>
+            <span class="link-cta">Explore <span class="material-symbols-outlined">arrow_forward</span></span>
+          </div>
+        </div>
+      </a>
+      <!-- Himachal 9D -->
+      <a href="full-himachal-package.html" class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="images/dshala 1.webp" alt="Himachal 9 Day"/>
+          <span class="pkg-badge adventure">Adventure</span>
+          <span class="pkg-state">Himachal</span>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-meta">
+            <span><span class="material-symbols-outlined">schedule</span> 8N/9D</span>
+            <span><span class="material-symbols-outlined">person</span> 2 Persons</span>
+          </div>
+          <div class="star-row">★★★★★</div>
+          <h3>Shimla · Manali · Dharamshala · Dalhousie</h3>
+          <p>Complete Himachal tour — mountains, monasteries, waterfalls & colonial charm.</p>
+          <div class="pkg-pickup"><span class="material-symbols-outlined">directions_car</span> Pickup: Delhi</div>
+          <div class="pkg-footer">
+            <div>
+              <div class="pkg-price">₹55,000 </div>
+              <div style="font-size:.72rem;color:#388e3c;">Off-season from ₹45,000</div>
+            </div>
+            <span class="link-cta">Explore <span class="material-symbols-outlined">arrow_forward</span></span>
+          </div>
+        </div>
+      </a>
+      <!-- Kerala -->
+      <a href="destinations.html?state=kerala" class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1590374504350-d5ebcb4cfd2e?w=800&auto=format&fit=crop&q=80" alt="Kerala"/>
+          <span class="pkg-badge retreat">Retreat</span>
+          <span class="pkg-state">Kerala</span>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-meta">
+            <span><span class="material-symbols-outlined">schedule</span> 6N/7D</span>
+          </div>
+          <div class="star-row">★★★★★</div>
+          <h3>God's Own Country — Kerala</h3>
+          <p>Kochi · Munnar · Thekkady · Alleppey backwaters · Kovalam beach. Kochi/Trivandrum pickup.</p>
+          <div class="pkg-pickup"><span class="material-symbols-outlined">directions_car</span> Pickup: Kochi / Trivandrum</div>
+          <div class="pkg-footer">
+            <div><div class="pkg-price">₹40,000 </div></div>
+            <span class="link-cta">Explore <span class="material-symbols-outlined">arrow_forward</span></span>
+          </div>
+        </div>
+      </a>
+      <!-- Rajasthan -->
+      <a href="destinations.html?state=rajasthan" class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1578898395416-7da9e8c3e7fc?w=800&auto=format&fit=crop&q=80" alt="Rajasthan"/>
+          <span class="pkg-badge luxury">Luxury</span>
+          <span class="pkg-state">Rajasthan</span>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-meta">
+            <span><span class="material-symbols-outlined">schedule</span> 7N/8D</span>
+          </div>
+          <div class="star-row">★★★★★</div>
+          <h3>Royal Rajasthan Circuit</h3>
+          <p>Jaipur · Ajmer · Jodhpur · Jaisalmer · Udaipur · Mount Abu. Delhi pickup.</p>
+          <div class="pkg-pickup"><span class="material-symbols-outlined">directions_car</span> Pickup: Delhi</div>
+          <div class="pkg-footer">
+            <div><div class="pkg-price">₹45,000 </div></div>
+            <span class="link-cta">Explore <span class="material-symbols-outlined">arrow_forward</span></span>
+          </div>
+        </div>
+      </a>
+      <!-- Sikkim -->
+      <a href="destinations.html?state=sikkim" class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&auto=format&fit=crop&q=80" alt="Sikkim"/>
+          <span class="pkg-badge adventure">Adventure</span>
+          <span class="pkg-state">Sikkim</span>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-meta">
+            <span><span class="material-symbols-outlined">schedule</span> 6N/7D</span>
+          </div>
+          <div class="star-row">★★★★☆</div>
+          <h3>Sikkim & Darjeeling Getaway</h3>
+          <p>Gangtok · Lachen · Lachung · Darjeeling tea gardens & mountain views.</p>
+          <div class="pkg-pickup"><span class="material-symbols-outlined">directions_car</span> Pickup: Gangtok / Darjeeling</div>
+          <div class="pkg-footer">
+            <div><div class="pkg-price">₹35,000 </div></div>
+            <span class="link-cta">Explore <span class="material-symbols-outlined">arrow_forward</span></span>
+          </div>
+        </div>
+      </a>
+      <!-- Goa -->
+      <a href="goa-package.html" class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&auto=format&fit=crop&q=80" alt="Goa"/>
+          <span class="pkg-badge family">Family</span>
+          <span class="pkg-state">Goa</span>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-meta">
+            <span><span class="material-symbols-outlined">schedule</span> 3N/4D</span>
+          </div>
+          <div class="star-row">★★★★★</div>
+          <h3>Goa Holiday Package</h3>
+          <p>North Goa · South Goa sightseeing · Fort Aguada · Panaji · Beaches & Churches.</p>
+          <div class="pkg-pickup"><span class="material-symbols-outlined">directions_car</span> Pickup: Dabolim Airport / Madgaon / Thivim</div>
+          <div class="pkg-footer">
+            <div><div class="pkg-price">₹25,000 </div>
+          <div style="font-size:.72rem;color:#388e3c;">Off-season from ₹25,000</div></div>
+             
+            <span class="link-cta">Explore <span class="material-symbols-outlined">arrow_forward</span></span>
+  
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ETHOS ===== -->
+<section class="ethos-section section">
+  <div class="container">
+    <div class="ethos-grid">
+      <div>
+        <span class="eyebrow">Why Sunscape Tour and Travels</span>
+        <h2 class="section-title">Sunscape Tour and Travels Promise</h2>
+        <div class="ethos-items">
+          <div class="ethos-item reveal">
+            <span class="material-symbols-outlined ethos-icon">verified</span>
+            <div>
+              <h4>Personalised Itineraries</h4>
+              <p>Every trip is custom-planned. Our travel experts design routes based on your interests, budget, and travel dates.</p>
+            </div>
+          </div>
+          <div class="ethos-item reveal">
+            <span class="material-symbols-outlined ethos-icon">local_taxi</span>
+            <div>
+              <h4>Exclusive Private Transfers</h4>
+              <p>Door-to-door pickup and drop from airports, railway stations, and bus stands across all pickup cities.</p>
+            </div>
+          </div>
+          <div class="ethos-item reveal">
+            <span class="material-symbols-outlined ethos-icon">support_agent</span>
+            <div>
+              <h4>24/7 On-Trip Support</h4>
+              <p>Our team is available around the clock during your journey — just a WhatsApp message away.</p>
+            </div>
+          </div>
+          <div class="ethos-item reveal">
+            <span class="material-symbols-outlined ethos-icon">currency_rupee</span>
+            <div>
+              <h4>Transparent Pricing</h4>
+              <p>No hidden charges, no online payment pressure. Pay directly after consultation — bank transfer or cash, your choice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ethos-imgs">
+        <img class="ethos-img1" src="https://images.unsplash.com/photo-1540206395-68808572332f?w=700&auto=format&fit=crop&q=80" alt="Travel experience"/>
+        <img class="ethos-img2" src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=500&auto=format&fit=crop&q=80" alt="Happy traveller"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRAVEL STORIES ===== -->
+<section class="stories-section section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">From The Journal</span>
+        <h2 class="section-title">Travel Stories</h2>
+      </div>
+    </div>
+    <div class="stories-grid">
+      <a href="about.html" class="story-card story-card--lg-item">
+        <img src="https://images.unsplash.com/photo-1439853949212-36589f9f4c79?w=900&auto=format&fit=crop&q=80" alt="Himalayan pass"/>
+        <div class="s-overlay">
+          <span class="s-tag">Long Read</span>
+          <h3>The Silence of the Peaks: A Journey Through Himachal</h3>
+          <p>Exploring monasteries, mountain passes and pristine valleys of Spiti and Manali.</p>
+        </div>
+      </a>
+      <div class="story-side">
+        <a href="destinations.html?state=kerala" class="story-card story-card--sm">
+          <img src="https://images.unsplash.com/photo-1590374504350-d5ebcb4cfd2e?w=600&auto=format&fit=crop&q=80" alt="Kerala"/>
+          <div class="s-overlay">
+            <h4>Kerala: God's Own Country in 7 Days</h4>
+          </div>
+        </a>
+        <a href="destinations.html?state=rajasthan" class="story-card story-card--sm">
+          <img src="https://images.unsplash.com/photo-1578898395416-7da9e8c3e7fc?w=600&auto=format&fit=crop&q=80" alt="Rajasthan"/>
+          <div class="s-overlay">
+            <h4>Royal Rajasthan: Palaces, Forts & Desert Dunes</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:32px;">
+  <a href="blog/index.html" class="btn btn-outline">
+    More Stories <span class="material-symbols-outlined">arrow_forward</span>
+  </a>
+</div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter">
+  <span class="eyebrow">Stay Inspired</span>
+  <h2>Join the Inner Circle</h2>
+  <p>Receive exclusive travel deals, seasonal packages, and insider travel tips.</p>
+  <div class="nl-form">
+    <input type="email" placeholder="Your email address" id="nlEmail"/>
+    <button onclick="subscribeNL()">Subscribe</button>
+  </div>
+  <p class="nl-note">No spam. Only inspiration.</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo">Sunscape Tour and Travels<span style="color:var(--gold-lt)">.</span></span>
+      <p class="footer-about">Curating unforgettable journeys across India's most beautiful landscapes. From the Himalayas to the backwaters, we plan every detail so you travel with ease.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Website"><span class="material-symbols-outlined">public</span></a>
+        <a href="#" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+        <!-- CHANGE: Replace with client's actual email -->
+        <a href="mailto:info@Sunscape Tour and Travelstravels.in" aria-label="Email"><span class="material-symbols-outlined">mail</span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Destinations</h4>
+      <ul>
+        <li><a href="destinations.html?state=himachal">Himachal Pradesh</a></li>
+        <li><a href="destinations.html?state=kerala">Kerala</a></li>
+        <li><a href="destinations.html?state=rajasthan">Rajasthan</a></li>
+        <li><a href="destinations.html?state=sikkim">Sikkim & Darjeeling</a></li>
+        <li><a href="destinations.html?state=goa">Goa</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="destinations.html">All Tours</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-conditions.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Sunscape Tour and Travels Travels. All rights reserved.</p>
+    <div>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-conditions.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT — CHANGE 919999999999 to client's number -->
+<a class="wa-float" href="https://wa.me/919999999999?text=Hi!%20I%20am%20interested%20in%20booking%20a%20tour." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.364.634 4.673 1.838 6.698L2.667 29.333l6.823-1.789A13.267 13.267 0 0 0 16 29.333C23.364 29.333 29.333 23.364 29.333 16S23.364 2.667 16 2.667Zm0 24.266a11.003 11.003 0 0 1-5.607-1.534l-.402-.238-4.05 1.062 1.08-3.944-.263-.41A10.983 10.983 0 0 1 5 16C5 9.935 9.935 5 16 5s11 4.935 11 11-4.935 11-11 11Zm6-8.222c-.33-.165-1.95-.962-2.253-1.072-.302-.11-.522-.165-.742.165-.22.33-.85 1.072-1.043 1.293-.192.22-.385.247-.715.083-.33-.165-1.393-.513-2.653-1.638-.98-.875-1.641-1.956-1.834-2.286-.192-.33-.02-.508.145-.672.149-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.413-.027-.578-.083-.165-.742-1.788-1.017-2.448-.267-.644-.54-.556-.742-.566-.192-.009-.413-.011-.633-.011-.22 0-.578.082-.88.412s-1.155 1.128-1.155 2.75 1.183 3.19 1.348 3.41c.165.22 2.328 3.556 5.642 4.987.789.34 1.405.543 1.885.695.792.252 1.513.216 2.083.131.635-.095 1.95-.797 2.226-1.567.275-.77.275-1.431.192-1.567-.082-.138-.302-.22-.633-.385Z"/></svg>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
