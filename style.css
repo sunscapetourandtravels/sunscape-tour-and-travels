@@ -575,7 +575,7 @@ blockquote { font-family: var(--font-serif); font-size: clamp(1rem, 2vw, 1.25rem
   }
   .nav-drawer.open { transform: translateX(0); }
   .nav-drawer a { display: block; font-size: 1.1rem; font-weight: 400; padding: 14px 0; border-bottom: 1px solid var(--border); color: var(--dark); }
-  .nav-drawer .btn { display: inline-flex; margin-top: 20px; }
+  .nav-drawer .btn { display: inline-flex; margin-top: 20px; color: white; padding: 5px;}
 
   .search-wrap { flex-direction: column; border-radius: 14px; padding: 16px; gap: 10px; }
   .s-div { display: none; }

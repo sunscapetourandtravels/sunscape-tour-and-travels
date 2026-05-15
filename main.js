@@ -339,3 +339,49 @@ window.addEventListener('DOMContentLoaded', () => {
   filterTours();
 
 });
+
+
+function handleFormSubmit(event){
+
+  event.preventDefault();
+
+  const form = document.getElementById("contactForm");
+
+  const name = form.name.value;
+  const phone = form.phone.value;
+  const email = form.email.value;
+  const destination = form.destination.value;
+  const travelDate = form.travel_date.value;
+  const travellers = form.travellers.value;
+  const pickup = form.pickup.value;
+  const message = form.message.value;
+
+  const whatsappMessage = `New Tour Enquiry
+
+Full Name: ${name}
+
+Phone Number: ${phone}
+
+Email: ${email}
+
+Destination: ${destination}
+
+Travel Date: ${travelDate}
+
+Travellers: ${travellers}
+
+Pickup Point: ${pickup}
+
+Message:
+${message}`;
+
+  const whatsappURL =
+`https://wa.me/916230208955?text=${encodeURIComponent(whatsappMessage)}`;
+
+  window.open(whatsappURL, "_blank");
+
+  document.getElementById("formSuccess").style.display = "flex";
+
+  form.reset();
+
+}
