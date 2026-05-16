@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- MAIN PAGES -->
+  
 
   <url>
     <loc>https://sunscapetourandtravels.com/</loc>
@@ -23,7 +23,7 @@
     <loc>https://sunscapetourandtravels.com/destinations</loc>
   </url>
 
-  <!-- REAL PACKAGE PAGES -->
+  
 
   <url>
     <loc>https://sunscapetourandtravels.com/shimla-manali-package</loc>
@@ -43,7 +43,7 @@
     <loc>https://sunscapetourandtravels.com/blog</loc>
   </url>
 
-  <!-- REAL BLOGS -->
+  
 
   <url>
     <loc>https://sunscapetourandtravels.com/blog/himachal</loc>
