@@ -308,14 +308,14 @@ input, select, textarea { font-family: var(--font-sans); font-size: 14px; width:
    TOURS / DESTINATIONS LISTING PAGE
    ========================================= */
 .tours-page { padding-bottom: 80px; }
-.filters-bar { background: var(--white); border-bottom: 1px solid var(--border); padding: 20px 5%; position: sticky; top: var(--nav-h); z-index: 100; }
-.filters-inner { max-width: var(--max); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
-.f-field { display: flex; flex-direction: column; gap: 5px; min-width: 160px; flex: 1; }
-.f-field label { font-size: 0.65rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
-.f-field input, .f-field select { background: var(--bg2); border: 1px solid var(--border); color: var(--dark); border-radius: var(--r); padding: 9px 12px; font-size: 0.84rem; transition: border .2s; }
+.filters-bar { background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 5%; position: sticky; top: var(--nav-h); z-index: 100; }
+.filters-inner { max-width: var(--max); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; }
+.f-field { display: flex; flex-direction: column; gap: 3px; min-width: 160px; flex: 1; }
+.f-field label { font-size: 0.65rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 0; }
+.f-field input, .f-field select { background: var(--bg2); border: 1px solid var(--border); color: var(--dark); border-radius: var(--r); padding: 7px 10px; font-size: 0.82rem; transition: border .2s; }
 .f-field input:focus, .f-field select:focus { border-color: var(--gold); background: #fff; }
-.f-check-group { display: flex; flex-wrap: wrap; gap: 6px; }
-.f-check-group label { display: flex; align-items: center; gap: 5px; font-size: 0.8rem; cursor: pointer; color: var(--muted); }
+.f-check-group { display: flex; flex-wrap: wrap; gap: 4px; }
+.f-check-group label { display: flex; align-items: center; gap: 3px; font-size: 0.75rem; cursor: pointer; color: var(--muted); margin-bottom: 0; }
 .f-check-group input[type="checkbox"] { width: auto; padding: 0; accent-color: var(--gold); }
 .btn-clear-f { padding: 9px 18px; font-size: 0.72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border-dk); border-radius: var(--r); white-space: nowrap; align-self: flex-end; }
 .btn-clear-f:hover { color: var(--dark); }
@@ -598,8 +598,15 @@ blockquote { font-family: var(--font-serif); font-size: clamp(1rem, 2vw, 1.25rem
   .footer-grid { grid-template-columns: 1fr; }
   .gallery-3 { grid-template-columns: 1fr 1fr; }
   .gallery-3 img:last-child { display: none; }
-  .filters-inner { flex-direction: column; }
-  .f-field { min-width: 100%; }
+  .filters-bar { padding: 10px 5%; }
+  .filters-inner { flex-direction: row; flex-wrap: wrap; gap: 6px; }
+  .f-field { min-width: auto; flex: 0 1 calc(50% - 3px); gap: 2px; }
+  .f-field label { font-size: 0.55rem; margin-bottom: 0; }
+  .f-field input, .f-field select { padding: 5px 8px; font-size: 0.7rem; }
+  .f-check-group { gap: 3px; }
+  .f-check-group label { font-size: 0.65rem; gap: 2px; margin-bottom: 0; }
+  .f-check-group input[type="checkbox"] { width: 14px; height: 14px; }
+  .btn-clear-f { flex: 0 1 auto; padding: 5px 10px; font-size: 0.6rem; }
   .section { padding: 60px 0; }
   .itin-day { grid-template-columns: 70px 1fr; }
 }
@@ -610,6 +617,17 @@ blockquote { font-family: var(--font-serif); font-size: clamp(1rem, 2vw, 1.25rem
   .team-grid { grid-template-columns: repeat(2,1fr); }
   .pkg-stats-row { gap: 12px; }
   .season-prices { gap: 8px; }
+  .filters-bar { padding: 8px 5%; }
+  .filters-inner { gap: 4px; }
+  .f-field { flex: 0 1 calc(50% - 2px); gap: 1px; }
+  .f-field label { font-size: 0.5rem; }
+  .f-field input, .f-field select { padding: 4px 6px; font-size: 0.65rem; }
+  .f-check-group { gap: 2px; }
+  .f-check-group label { font-size: 0.6rem; gap: 2px; }
+  .f-check-group input[type="checkbox"] { width: 12px; height: 12px; }
+  .btn-clear-f { flex: 0 1 calc(50% - 2px); padding: 4px 8px; font-size: 0.55rem; }
+  .pkg-grid { grid-template-columns: 1fr; }
+  .tour-grid { grid-template-columns: 1fr; }
 }
 
 /* ================================================
