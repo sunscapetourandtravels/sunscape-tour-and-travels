@@ -385,3 +385,15 @@ ${message}`;
   form.reset();
 
 }
+
+
+const canonicalTag = document.createElement("link");
+
+canonicalTag.setAttribute("rel", "canonical");
+
+canonicalTag.setAttribute(
+  "href",
+  window.location.origin + window.location.pathname
+);
+
+document.head.appendChild(canonicalTag);

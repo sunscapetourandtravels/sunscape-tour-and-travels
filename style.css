@@ -147,7 +147,7 @@ input, select, textarea { font-family: var(--font-sans); font-size: 14px; width:
   animation: fadeUp .9s ease both;
 }
 .hero-eyebrow { font-size: 0.7rem; letter-spacing: .25em; text-transform: uppercase; color: rgba(255,255,255,.7); margin-bottom: 14px; font-weight: 400; }
-.hero-title { font-family: var(--font-serif); font-size: clamp(2.8rem, 7vw, 6rem); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 32px; }
+.hero-title { font-family: var(--font-serif); font-size: clamp(2rem, 3vw, 6rem); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 32px; }
 .hero-title em { font-style: italic; }
 
 /* Search bar */
