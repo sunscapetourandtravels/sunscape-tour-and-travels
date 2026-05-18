@@ -1,5 +1,5 @@
 /* =============================================
-   Sunscape Tour and Travels TRAVELS — COMPLETE STYLESHEET
+   Sunscape Tour and Travels — COMPLETE STYLESHEET
    Matches original demo: cream/white bg, dark
    text, gold accents, editorial serif headings
    ============================================= */
@@ -747,4 +747,19 @@ blockquote { font-family: var(--font-serif); font-size: clamp(1rem, 2vw, 1.25rem
 .footer{
   content-visibility:auto;
   contain-intrinsic-size:1000px;
+}
+
+
+.footer-logo{
+  display:flex;
+  align-items:center;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color:#fff;
+}
+
+.footer-logo img{
+  height:35px;
+  width:auto;
+  object-fit:contain;
 }

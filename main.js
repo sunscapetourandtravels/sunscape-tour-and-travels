@@ -1,5 +1,5 @@
 /* ================================================
-   Sunscape Tour and Travels TRAVELS — MAIN.JS
+   Sunscape Tour and Travels — MAIN.JS
    All interactivity for the website
    ================================================ */
 
