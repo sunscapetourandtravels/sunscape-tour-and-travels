@@ -739,3 +739,12 @@ blockquote { font-family: var(--font-serif); font-size: clamp(1rem, 2vw, 1.25rem
   object-fit: contain;
  
 }
+
+.packages-section,
+.ethos-section,
+.stories-section,
+.newsletter,
+.footer{
+  content-visibility:auto;
+  contain-intrinsic-size:1000px;
+}
