@@ -564,6 +564,12 @@ blockquote { font-family: var(--font-serif); font-size: clamp(1rem, 2vw, 1.25rem
 
 @media (max-width: 768px) {
   :root { --nav-h: 62px; }
+   .hero{
+    height:auto;
+    min-height:72vh;
+    padding-top:90px;
+    padding-bottom:40px;
+  }
   .nav-links { display: none; }
   .nav-book { display: none; }
   .hamburger { display: flex; }
